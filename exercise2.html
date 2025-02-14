@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+</head>
+<body>
+  <h1>LAB 4 exercise 2</h1>
+  <script>
+    //step1
+    /*function add(num1, num2){
+      return num1 + num2
+    }*/
+    /*function subtract(num1, num2){
+      return  num1 - num2
+    }*/
+    //step2
+    /*function add(num1, num2 = 5){
+      return num1 + num2
+    }
+    function subtract(num1 , num2 = 10){
+      return  num1 - num2
+    }*/
+
+    //step3
+    const add = (x, y = 5) => x + y;
+    const subtract =(x,y =4) => x-y;
+    const multiply =(x,y) => x*y;
+    const divide = (x, y) => (y !== 0 ? x / y : "Cannot divide by zero");
+//step4
+
+function calculator(var1, var2, callback) {
+  return callback(var1, var2);
+}
+    console.log(calculator(6, 3, add));
+    console.log(calculator(6, 3, subtract));
+    console.log(calculator(6, 3, multiply));
+    console.log(calculator(6, 3, divide));
+    console.log(calculator(6, 0, divide));
+
+  </script>
+</body>
+</html>
